@@ -1,7 +1,7 @@
 # 青柠疫服自动打卡
 
 
-基于[chrisyang2003](https://github.com/chrisyang2003/qnyf)的开源项目，二次修改的一款青柠自动打卡脚本。具体的功能细节直接沿用chrisyang2003的代码，使用`user.json`文件储存用户数据来代替sqlite3，针对每日打卡，新增邮箱消息推送。
+基于[chrisyang2003](https://github.com/chrisyang2003/qnyf)的开源项目，二次修改的一款青柠自动打卡脚本。具体的功能细节直接沿用原项目的接口，使用`user.json`文件储存用户数据来代替sqlite3，针对每日打卡，新增邮箱消息推送。
 
 
 按照字段依次填入信息到`user.json`，如果有多个用户，按照json文件的编写规则增加即可。最后运行`start.sh`
@@ -12,7 +12,7 @@
     "password": "***", # 青柠账号的密码
     "UserType": 1, # 用户类型
     "XGH": "******",  # 学号
-    "YXDM": ***,  # 学校代码 根据校名在schoolList查看对应代码
+    "YXDM": ***,  # 学校代码 根据校名在schoolList.md文件中查看对应代码
     "location": "***", # 打卡地地址
     "JWD": "******,******", #打卡地经纬度
     "email": "***" # 接收打卡成功通知的邮箱
