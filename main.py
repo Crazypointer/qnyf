@@ -14,17 +14,11 @@ def auto_daka():
         #判断是否已经打卡
         if role.isclockin():
             send_email(user["name"] + "同学，今日已打卡成功，请勿重复打卡！", user["email"])
-            if user["email"] != "1196720398@qq.com":
-                send_email(user["name"] + "同学，今日已打卡成功，请勿重复打卡！", "1196720398@qq.com")
         else:
             if role.Daka():
                 send_email(user["name"] + "同学，" + "今日打卡成功！", user["email"])
-                if user["email"] != "1196720398@qq.com":
-                    send_email(user["name"] + "同学，" + "今日打卡成功！", "1196720398@qq.com")
             else:
                 send_email(user["name"] + "同学，" + "，今日打卡失败！请尝试手动打卡。", user["email"])
-                if user["email"] != "1196720398@qq.com":
-                    send_email(user["name"] + "同学，" + "今日打卡成功！", "1196720398@qq.com")
 
 
 def send_email(msg, email):
