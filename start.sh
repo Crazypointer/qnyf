@@ -1,0 +1,1 @@
+cd "/home/ubuntu/qnyf/" && nohup python3 -u main.py &
